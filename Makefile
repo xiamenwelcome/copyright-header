@@ -3,10 +3,10 @@ SHELL := /bin/bash
 -include $(shell curl -sSL -o .build-harness "https://cloudposse.tools/build-harness"; echo .build-harness)
 
 #COPYRIGHT_CMD ?= copyright-header
-COPYRIGHT_CMD ?= docker run --rm --volume `pwd`:$(COPYRIGHT_OUTPUT_DIR) osterman/copyright-header:latest
+COPYRIGHT_CMD ?= docker run --rm --volume `pwd`:$(COPYRIGHT_OUTPUT_DIR) welcome-building-material/copyright-header:latest
 COPYRIGHT_LICENSE ?= GPL3
-COPYRIGHT_HOLDER ?= Erik Osterman <e@osterman.com>
-COPYRIGHT_YEAR ?= 2012-2017
+COPYRIGHT_HOLDER ?= Mahmoud Joudah <info@xmnwelcomestone.com>
+COPYRIGHT_YEAR ?= 2023-2024
 COPYRIGHT_SOFTWARE ?= Copyright Header
 COPYRIGHT_SOFTWARE_DESCRIPTION ?= A utility to manipulate copyright headers on source code files
 COPYRIGHT_OUTPUT_DIR ?= /usr/src
